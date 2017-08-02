@@ -4,12 +4,10 @@ import org.o7planning.spring.lang.Language;
 
 public class Vietnamese implements Language{
 
-	@Override
 	public String getGreeting() {
 		return "Xin Chao!";
 	}
 
-	@Override
 	public String getbye() {
 		return "Tam Biet!";
 	}
