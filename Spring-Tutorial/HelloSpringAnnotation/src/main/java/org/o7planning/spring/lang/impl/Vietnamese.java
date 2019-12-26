@@ -16,4 +16,5 @@ public class Vietnamese implements Language{
 		return "Khoe khong?";
 	}
 	
+	
 }
