@@ -8,8 +8,12 @@ public class Vietnamese implements Language{
 		return "Xin Chao!";
 	}
 
-	public String getbye() {
+	public String getBye() {
 		return "Tam Biet!";
+	}
+
+	public String askQuestion() {
+		return "Khoe khong?";
 	}
 	
 }

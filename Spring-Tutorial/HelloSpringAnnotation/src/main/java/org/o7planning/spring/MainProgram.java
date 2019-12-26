@@ -16,8 +16,20 @@ public class MainProgram {
 		
 		Language language = (Language) context.getBean("language");
 		
+		String[] beanName = context.getBeanDefinitionNames();
+		
+		for(int i = 0; i < beanName.length; i++) {
+			System.out.println("Bean name ["+i+"]:" + beanName[i]);
+		}
+		
+		System.out.println("There is/are bean(s): " + context.getBeanDefinitionCount());
+		
 		System.out.println("Bean language: " + language);
-		System.out.println("Call language.saybye(): " + language.getbye());
+		System.out.println("Call language.saybye(): " + language.getBye());
+		
+		Language secondLangua = (Language) context.getBean("secondLanguage");
+		System.out.println("Bean language: " + secondLangua);
+		System.out.println("Call language.saybye(): " + secondLangua.getBye());
 		
 		System.out.println("-----------------");
 		GreetingService service = (GreetingService) context.getBean("greetingService");

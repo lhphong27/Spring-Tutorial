@@ -8,8 +8,12 @@ public class English implements Language{
 		return "Hello!";
 	}
 
-	public String getbye() {
+	public String getBye() {
 		return "Good bye!";
+	}
+
+	public String askQuestion() {
+		return "How are you doing?";
 	}
 	
 }

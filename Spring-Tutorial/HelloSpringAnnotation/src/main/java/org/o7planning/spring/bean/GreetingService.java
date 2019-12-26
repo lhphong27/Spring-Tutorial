@@ -9,6 +9,10 @@ public class GreetingService {
 	@Autowired
 	private Language language;
 	
+	@Autowired
+	private Language secondLanguage;
+	
+	
 	public GreetingService() {
 		
 	}
@@ -16,6 +20,7 @@ public class GreetingService {
 	public void sayGreeting() {
 		String greeting = language.getGreeting();
 		System.out.println("Greeting: "+ greeting);
-		
+		String greeting2 = secondLanguage.getGreeting();
+		System.out.println("Greeting: "+ greeting2);
 	}
 }
